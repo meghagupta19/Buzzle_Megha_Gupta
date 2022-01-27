@@ -1,0 +1,73 @@
+.row-heading{
+    margin: 10px 0 0 0;
+    text-align: left;
+    color: grey;
+}
+
+.head-span{
+    color: black;
+    font-weight: 600;
+}
+
+.heading-section{
+    text-decoration: underline;
+}
+
+.col>.card{
+    border: 0px;
+}
+
+.card>.card-body{
+    text-align: left;
+    padding: 5px;
+    
+}
+
+.card>.card-body>.card-img-top{
+   position: relative;
+}
+
+.card-img-top{
+    opacity: 0.8;
+}
+
+.badge-1{
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.badge-2{
+    position: absolute;
+    left: 5px;
+    top: 220px;
+}
+
+
+.img-card{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 20px;
+    width: 30px;
+}
+
+.card-body>.h5{
+   font-size: medium;
+   margin: 0;
+}
+
+.card-title{
+    font-size: medium;
+    margin: 0;
+    position: relative;
+}
+
+.dots{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.card-text{
+    margin-top: auto;
+}
