@@ -29,6 +29,7 @@
 
 .card-img-top{
     opacity: 0.8;
+    height: 236px;
 }
 
 .badge-1{
@@ -40,7 +41,7 @@
 .badge-2{
     position: absolute;
     left: 5px;
-    top: 220px;
+    top: 200px;
 }
 
 
@@ -70,4 +71,11 @@
 }
 .card-text{
     margin-top: auto;
+}
+.row >.details-right{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    color: blue;
 }

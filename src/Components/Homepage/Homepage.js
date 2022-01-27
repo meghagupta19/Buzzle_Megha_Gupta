@@ -2,13 +2,10 @@ import { Col, Container, Row } from "react-bootstrap";
 import React, { Component } from "react";
 import SearchField from "react-search-field";
 import Button from "react-bootstrap/Button";
-
 import { BiLogOut } from "react-icons/bi";
 
-// sections of left column
-import Navbar from "./Left_Column/Navbar";
-import RecommnededRooms from "./Left_Column/Recommended_Rooms";
-import RecommnededCreators from "./Left_Column/Recommended_Creators";
+
+import Sidebar from "./Left_Column/Sidebar";
 
 // sections of right column
 import Enterpreneurship from "./Right_Column/Enterpreneurship";
@@ -17,20 +14,21 @@ import Finance from "./Right_Column/Finance";
 import Software from "./Right_Column/Software";
 
 export class Homepage extends Component {
+  
   render() {
     return (
       <Container>
         <Row>
-          <Col md={10}>
+          <Col lg={10} md={5} xs={6}>
             <SearchField placeholder="Search" classNames="test-class" />
           </Col>
-          <Col md={2}>
+          <Col lg={2} md={5} xs={4} className="columne-xs">
             <Button href="#" type="button" value="Login">
               {" "}
               Login{" "}
             </Button>
             &emsp;
-            <Button href="#" type="submit" value="Signup">
+            <Button href="#" type="submit" value="Signup" className="loginbtn">
               {" "}
               Signup{" "}
             </Button>
@@ -38,21 +36,15 @@ export class Homepage extends Component {
         </Row>
 
         <Row>
-          <Col md={2} className="left-col">
-          <div className="menu"><BiLogOut/></div>
-            <Row>
-            <Col><Navbar /> </Col>
-              
-            </Row>
-            <Row>
-              <RecommnededRooms />
-            </Row>
-            <Row>
-              <RecommnededCreators />
-            </Row>
+          <Col
+            md={2}
+            className="left-col"
+          >
+            <div className="menu" expand="md" onClick={this.closeClick} id="close"> <BiLogOut />  </div>
+            <Sidebar />
           </Col>
 
-          <Col md={10}>
+          <Col md={10} >
             <Row>
               <DataScience />
             </Row>

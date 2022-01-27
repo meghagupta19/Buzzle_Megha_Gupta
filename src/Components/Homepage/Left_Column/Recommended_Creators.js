@@ -55,6 +55,31 @@ export class Recommended_creators extends Component {
           
         </ListGroup>
         ))}
+        <details closed>
+          <summary>Show more</summary>
+          {this.state.services.map((item, key) => (
+            <ListGroup>
+              <ListGroup.Item>
+                <Image
+                  roundedCircle
+                  fluid
+                  src={item.src}
+                  className="img-rec"
+                ></Image>
+                {item.title}{" "}
+                <Button
+                  className="rec_buttons"
+                  href="#"
+                  type="button"
+                  value="Join"
+                >
+                  {" "}
+                  Join{" "}
+                </Button>
+              </ListGroup.Item>
+            </ListGroup>
+          ))}
+        </details>
       </div>
     );
   }
